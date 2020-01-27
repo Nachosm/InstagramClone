@@ -89,13 +89,56 @@
         app:layout_constraintTop_toBottomOf="@+id/edtKickBoxerKickSpeed" />
 
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnSubmitKickBoxer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Submit"
+        android:layout_marginTop="16dp"
+        android:text="Submit Kickboxer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtKickBoxerKickPower" />
+
+    <TextView
+        android:id="@+id/txtGetData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Get Data from server"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmitBoxer" />
+
+    <Button
+        android:id="@+id/btnGetAllKickBoxersData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Get All KickBoxers"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGetData" />
+
+    <Button
+        android:id="@+id/btnGetAllBoxersData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Get All Boxers"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetAllKickBoxersData" />
+
+    <Button
+        android:id="@+id/btnSubmitBoxer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit Boxer"
+        app:layout_constraintEnd_toEndOf="@+id/btnSubmitKickBoxer"
+        app:layout_constraintStart_toStartOf="@+id/btnSubmitKickBoxer"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmitKickBoxer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
